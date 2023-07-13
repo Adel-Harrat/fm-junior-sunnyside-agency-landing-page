@@ -31,7 +31,7 @@ export default function Header() {
                   className={twMerge(
                     `text-tw-white font-tw-secondary`,
                     item.isPrimary &&
-                      "text-sm bg-tw-white text-tw-very-dark-desaturated-blue px-6 py-3 rounded-full font-tw-primary uppercase"
+                      "text-sm bg-tw-white text-tw-very-dark-desaturated-blue px-8 py-4 rounded-full font-tw-primary uppercase hover:bg-tw-white/20 hover:text-tw-white transition"
                   )}
                   href={item.href}
                 >
@@ -86,7 +86,7 @@ export default function Header() {
         {/* End of mobile menu */}
       </AnimatePresence>
 
-      <section className="flex-1 grid place-items-center">
+      <section className="flex-1 flex flex-col justify-center">
         <AnimatePresence initial={false} mode="wait">
           {!isOpen && (
             <motion.div
@@ -95,14 +95,14 @@ export default function Header() {
               animate="visible"
               exit="exit"
             >
-              <h1 className="font-tw-primary uppercase text-center text-tw-white text-5xl tracking-widest leading-normal md:text-6xl md:-mt-44 md:mb-32">
+              <h1 className="font-tw-primary uppercase text-center text-tw-white text-5xl tracking-widest leading-normal md:text-6xl md:mb-[15vh]">
                 We are creatives
               </h1>
               <figure className="text-center mt-10">
                 <img
                   src="./images/icon-arrow-down.svg"
                   alt="icon arrow down"
-                  className="inline-block"
+                  className="inline-block select-none"
                 />
               </figure>
             </motion.div>

@@ -8,7 +8,11 @@ export default function Gallery() {
       {gallery_images.map((image) => (
         <picture key={image.id}>
           <source media="(min-width: 768px)" srcSet={image.srcDesktop} />
-          <img src={image.srcMobile} alt="a gallery image" />
+          <img
+            src={image.srcMobile}
+            alt="a gallery image"
+            className="w-full object-cover select-none"
+          />
         </picture>
       ))}
     </section>

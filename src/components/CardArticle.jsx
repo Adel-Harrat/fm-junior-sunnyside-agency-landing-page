@@ -27,7 +27,7 @@ export default function CardArticle({
       </p>
       <a
         className={twMerge(
-          `text-center font-tw-primary uppercase z-10 after:h-2 after:-translate-y-[1.30rem] after:rounded-md after:opacity-30 relative after:absolute after:-bottom-5 after:-inset-x-2 after:-z-10`,
+          `text-center font-tw-primary uppercase z-10 after:h-3 after:-translate-y-[1.30rem] after:rounded-md after:opacity-30 relative after:absolute after:-bottom-6 after:-inset-x-2 after:-z-10 hover:after:opacity-100 after:transition`,
           borderColor
         )}
         href={linkHref}

@@ -20,7 +20,7 @@ export default function Footer() {
           <li key={item.id}>
             <a
               href={item.href}
-              className={`font-tw-secondary text-tw-dark-moderate-cyan-footer text-base hover:text-tw-white transition`}
+              className={`font-tw-secondary text-tw-dark-moderate-cyan-footer text-base hover:text-tw-white transition py-2`}
             >
               {item.value}
             </a>

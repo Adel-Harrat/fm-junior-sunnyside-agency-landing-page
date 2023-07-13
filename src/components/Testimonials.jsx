@@ -21,7 +21,7 @@ export default function Testimonials() {
             </figure>
 
             <p
-              className={`text-tw-very-dark-grayish-blue font-tw-secondary mx-5 leading-8`}
+              className={`text-tw-very-dark-grayish-blue font-tw-secondary mx-5 md:mx-0 leading-8 flex-1`}
             >
               {item.text}
             </p>

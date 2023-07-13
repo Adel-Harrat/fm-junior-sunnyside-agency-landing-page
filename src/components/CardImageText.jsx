@@ -6,12 +6,12 @@ export default function CardImageText(props) {
   return (
     <article
       className={twMerge(
-        `${srcMobile} ${srcDesktop} bg-cover bg-no-repeat bg-top`,
+        `${srcMobile} ${srcDesktop} bg-cover bg-no-repeat bg-top min-h-[80vh] flex flex-col justify-end`,
         classes
       )}
     >
       <h1
-        className={`pt-96 text-center font-tw-primary ${titleColor} font-bold text-3xl`}
+        className={`text-center font-tw-primary ${titleColor} font-bold text-3xl`}
       >
         {title}
       </h1>
