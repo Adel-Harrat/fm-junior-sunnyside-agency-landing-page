@@ -13,7 +13,7 @@ import Logo from "./Logo";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <section className="bg-[url('./images/mobile/image-header.jpg')] md:bg-[url('./images/desktop/image-header.jpg')] bg-cover bg-bottom min-h-[60vh] md:min-h-screen overflow-auto flex flex-col justify-between relative">
+    <section className="bg-[url('/images/mobile/image-header.jpg')] md:bg-[url('/images/desktop/image-header.jpg')] bg-cover bg-bottom min-h-[60vh] md:min-h-screen overflow-auto flex flex-col justify-between relative">
       <header className="mx-5 mt-10 flex items-center justify-between md:max-w-7xl md:px-16 md:mx-auto md:w-full">
         <a href="/">
           <div className="sr-only">Logo link</div>
